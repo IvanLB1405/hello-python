@@ -56,10 +56,7 @@ print(calculate_average(2,2,5))
 
 #09
 def count_characters(text):
-    counter = 0
-    for letter in text:
-        counter += 1
-    return counter
+    return len(text)
 print(count_characters("Hola"))
 
 #10

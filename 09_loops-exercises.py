@@ -54,14 +54,15 @@ for num in range(10, 0, -1):
 list2 = [30,10,30,20,30,40]
 conteo = 0
 for number in list2:
-    conteo = list2.count(30)
+    if number == 30:
+        conteo += 1
 print(f"El numero 30 aparece {conteo} veces")
 
 #10
 list3 = ["Barbara", "Lucho", "Ivan", "Brais", "Pepe", "Juan"]
 for name in list3:
-    if name.casefold() == "brais".casefold():
+    if name == "Brais":
         print("He encontrado a Brais")
         break
     else:
-        print(f"{name} ha sido encontrado")
+        print(name)
